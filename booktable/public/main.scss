@@ -1,0 +1,30 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@media (max-width: 991px){
+    nav .container-fluid{
+      flex-direction: row-reverse;
+      .logo{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+      } 
+
+      #navbarNav{
+        position: fixed;
+        background-color: #F4CE14;
+        border-radius: 16px!important;
+        padding: 0; 
+        margin-top: 25px;
+        width: auto;
+      }
+    }
+}
