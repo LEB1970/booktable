@@ -7,6 +7,58 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root,
+footer{
+  width: 60vw;
+  margin: auto;
+}
+nav.bg-body-tertiary{
+  background-color: #ffffff!important;
+  border: 1px solid #000000;
+}
+#navbarNav{
+  justify-content: end;
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+@media (max-width: 991px){
+  #root,
+  footer{
+    width: 100%;
+  }
+  /* #navbarNav{
+    position: fixed;
+    background: #F4CE14;
+    border-radius: 16px;
+    padding: 0;    
+  }   */
+
+  /* nav .container-fluid{
+    flex-direction: row-reverse;
+    .logo{
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+    }
+  } */
+}
+
+
+/* #navbarNav li:nth-child(even) {background: #CCC};
+  #navbarNav li:nth-child(odd) {background: #FFF} */
+
+.nav-link:focus{
+  font-size: 18px;
+  font-weight: bold;
+  color:#495E57;
+  text-decoration: underline;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  border: 1px solid #000000;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
