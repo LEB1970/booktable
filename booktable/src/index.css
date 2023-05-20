@@ -9,12 +9,17 @@ body {
 
 #root,
 footer{
-  width: 60vw;
+  width: 100%;
   margin: auto;
 }
+
+nav{
+  width: 75%;
+  margin: auto;
+}
+
 nav.bg-body-tertiary{
   background-color: #ffffff!important;
-  border: 1px solid #000000;
 }
 #navbarNav{
   justify-content: end;
@@ -22,44 +27,199 @@ nav.bg-body-tertiary{
   list-style-type: none;
 }
 
+footer{
+  /* position: fixed; */
+  bottom: 0;
+  border: 1px solid #000000;
+}
+
 @media (max-width: 991px){
+
+  button{
+    font-size: 16px!important;
+  }
   #root,
   footer{
     width: 100%;
   }
-  /* #navbarNav{
-    position: fixed;
-    background: #F4CE14;
-    border-radius: 16px;
-    padding: 0;    
-  }   */
 
-  /* nav .container-fluid{
-    flex-direction: row-reverse;
-    .logo{
-      flex: 1;
-      display: flex;
-      justify-content: space-around;
-    }
-  } */
+  nav{
+    width:100%
+  }
+
+  .hero{
+    margin-bottom: 1rem!important;
+  }
+  .hero .c1 {
+    width: 100%!important;
+    margin: auto;
+	  margin: 10px;
+  }
+    .hero-about {
+      width: 100%!important;
+  }
+  .hero-s2 { 
+    width:9rem!important;
+    margin-top: 90px!important;
+    height: 9rem!important;
+    margin-right: 10px;
+  }
+  .hero-button {
+    margin-top: -2rem!important;
+  }
+
+
+  .nav-link:focus{
+    font-size: 18px;
+    font-weight: bold;
+    color:#495E57;
+    text-decoration: underline;
+  }
+ 
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  /* specials */
+  .specials .grid-container {
+    width: auto!important;
+    grid-template-columns: auto!important;
+
+  }
+
+  .specials img{
+    height: auto!important;
+  }
+  .specials section{   
+    display: block!important;
+    margin: 10px!important;
+  }
+  
+  .testify{
+    margin: 0!important;
+    max-width: 100%!important;
+  }
+
+  .testify .card {
+    width: 100%!important;
+}
 }
 
+@media (max-width: 350px){
+  .hero-s2 {display: none;}
 
-/* #navbarNav li:nth-child(even) {background: #CCC};
-  #navbarNav li:nth-child(odd) {background: #FFF} */
+}
 
-.nav-link:focus{
-  font-size: 18px;
-  font-weight: bold;
-  color:#495E57;
-  text-decoration: underline;
+/* Hero */
+.hero{
+  display: flex;
+  background-color: #495E57;
+  border:1px solid black;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5rem;
 }
-footer{
-  position: fixed;
-  bottom: 0;
-  border: 1px solid #000000;
+.hero .c1{
+  width: 75%;
+  margin: auto;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero h1{
+font-family: 'Markazi Text';
+color: #F4CE14;
+margin-bottom: 0;
+}
+
+.hero h2{
+  font-family: 'Markazi Text';
+  color: #FFFFFF;
+}
+.hero-s1{
+
+  width: 30%;
+  height: 21rem;
+  margin-left: 1rem;
+  flex: auto;
+}
+.hero-s2{
+  background-color: orange;
+  border:1px solid black;
+  width: 18rem;
+  height: 25rem;
+  border-radius: 1rem;
+  margin-top: 10px;
+  background-image: url("../public/images/chef2.png");
+  background-repeat: round;
+  flex: 0 1 auto
+}
+.hero-about{
+  width: 38rem;
+}
+.hero p{
+  font-family: 'karla';
+  color: #FFFFFF;
+}
+
+.specials button, 
+.specials button:hover,
+.hero button:hover,
+.hero button{
+background:#F4CE14;
+color:#495E57;
+border:#495E57 1px solid;
+}
+
+/* .specials  */
+.specials {
+  width: auto;
+  margin: auto;
+}
+.specials h2{
+  font-family: 'Markazi Text';
+  color: #000000;
+}
+
+.specials .card {
+  /* width: 29rem!important; */
+
+}
+
+.specials .grid-container {
+  width: 75%;
+  margin: auto;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  grid-gap: 1em;
+}
+
+.specials .grid-item{
+  width: 100%;
+}
+.specials img{
+  height: 295px;
+}
+
+.specials section{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between
+}
+
+.testify{
+  max-width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0;
+}
+.testify .card{
+  width: 21.5rem;
+  padding: 0;
+}
+
+.testify .row{
+  gap:1rem;
+  margin: 0;
 }

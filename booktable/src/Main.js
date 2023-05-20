@@ -5,6 +5,7 @@ import BookingPage from './BookingPage';
 import About from './About';
 
 import { Routes, Route} from 'react-router-dom';
+import Specials from './Specials';
 
 const Main = ()=>{
     return(
@@ -15,6 +16,7 @@ const Main = ()=>{
                 <Route path="/menu" element={<Menu/>}/>
                 <Route path="/booking-Page" element={<BookingPage/>}/>
                 <Route path="/about" element={<About/>}/>
+                {/* <Route path="/specials" element={<Specials/>}/> */}
             </Routes>
         </>
     )
