@@ -1,6 +1,6 @@
 const Hero = ()=>{
     return(
-<container  className="hero">
+<div  className="hero">
     <div className="d-flex c1">
 <div  className="hero-s1">
     <h1 className="display-5 fw-bold">Little Lemon</h1>
@@ -13,7 +13,7 @@ const Hero = ()=>{
 {/* <img src="/images/chef2.png"/> */}
 </div>
 </div>
-</container>
+</div>
 
 
 

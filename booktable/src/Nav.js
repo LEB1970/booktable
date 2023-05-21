@@ -3,7 +3,7 @@ const Nav = ()=>{
     return(
         <nav className="nav navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">             
-                <div className='logo'><img src="/images/logo.png" alt="Bootstrap"  width="150" /></div>
+                <div className='logo'><img src="/images/logo3.png" alt="Bootstrap"  width="150" /></div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
