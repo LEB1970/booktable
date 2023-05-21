@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #edefee;
 }
 
 #root,
@@ -19,11 +20,11 @@ nav{
 }
 
 nav.bg-body-tertiary{
-  background-color: #ffffff!important;
+   background: #edefee!important;
 }
 #navbarNav{
   justify-content: end;
-  background-color: #ffffff;
+  background: #edefee!important;
   list-style-type: none;
 }
 
@@ -49,6 +50,8 @@ footer{
 
   .hero{
     margin-bottom: 1rem!important;
+    /* width: 90% !important;
+    margin: 1rem !important; */
   }
   .hero .c1 {
     width: 100%!important;
@@ -81,6 +84,11 @@ footer{
       monospace;
   }
   /* specials */
+
+  .specials{
+    /* width: 90% !important;
+    margin: 1rem !important; */
+  }
   .specials .grid-container {
     width: auto!important;
     grid-template-columns: auto!important;
@@ -96,17 +104,45 @@ footer{
   }
   
   .testify{
-    margin: 0!important;
     max-width: 100%!important;
+    /* margin: 1rem!important;
+    margin-top: 1rem;
+    padding: 0; */
   }
 
   .testify .card {
     width: 100%!important;
-}
+  }
+
+  /* About */
+  .about{
+    width: 100%!important;
+    /* margin: 1rem!important; */
+  }
+  /* .about p{
+    width: 14rem!important;
+  } */
+
+  .about-img1{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-top: 0!important;
+  }
+  .about-img2 {
+    display: none;
+  }
+  .about img{
+    width: 150px!important;   
+  }
+
+  footer{
+    width: 100%!important;
+  }
 }
 
 @media (max-width: 350px){
-  .hero-s2 {display: none;}
+ .about img, .hero-s2 {display: none;}
 
 }
 
@@ -115,20 +151,23 @@ footer{
   display: flex;
   background-color: #495E57;
   border:1px solid black;
-  width: 100%;
+  /* width: 100%; */
   height: 350px;
   margin-bottom: 5rem;
+ 
 }
 .hero .c1{
   width: 75%;
   margin: auto;
 }
+.about h1,
 .hero h1{
 font-family: 'Markazi Text';
 color: #F4CE14;
 margin-bottom: 0;
 }
 
+.about h2,
 .hero h2{
   font-family: 'Markazi Text';
   color: #FFFFFF;
@@ -154,6 +193,7 @@ margin-bottom: 0;
 .hero-about{
   width: 38rem;
 }
+.about p,
 .hero p{
   font-family: 'karla';
   color: #FFFFFF;
@@ -172,6 +212,7 @@ border:#495E57 1px solid;
 .specials {
   width: auto;
   margin: auto;
+
 }
 .specials h2{
   font-family: 'Markazi Text';
@@ -222,4 +263,43 @@ border:#495E57 1px solid;
 .testify .row{
   gap:1rem;
   margin: 0;
+  /* justify-content: center; */
+}
+
+/* About */
+
+.about{
+  /* display: flex!important; */
+  width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: #495E57;
+}
+
+
+
+.about-img1{
+  /* background-image: url("../public/images/fishdish.png"); */
+  margin-top: 30px;
+}
+ .about-img2{
+
+  margin-left: -30px;
+} 
+
+.about img{
+  width: 200px;
+  height: 255px;
+  border: 1px black solid; 
+}
+
+footer{
+  width: 75%;
+  background-color: #edefee!important;
+}
+
+footer  img{
+  width: 75px;
+  height: auto;
+  
 }
