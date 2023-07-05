@@ -1,9 +1,18 @@
-
+import Footer from './Footer';
+import Specials from './Specials';
+import Testimonials from './Testimonial';
+import About from './About';
+import Hero from './Hero';
 const HomePage = ()=>{
     return( 
         <header className="">  
-            <h1>Home Page</h1>             
-      </header>
+            
+            <Hero/>
+            <Specials/>
+            <Testimonials/>
+            <About/>
+            <Footer/>             
+        </header>
     )
 };
 export default HomePage;

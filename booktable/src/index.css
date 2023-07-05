@@ -7,18 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #edefee;
 }
-
 #root,
 footer{
   width: 100%;
   margin: auto;
 }
-
 nav{
   width: 75%;
   margin: auto;
 }
-
 nav.bg-body-tertiary{
    background: #edefee!important;
 }
@@ -27,15 +24,12 @@ nav.bg-body-tertiary{
   background: #edefee!important;
   list-style-type: none;
 }
-
-footer{
-  /* position: fixed; */
+footer{  
   bottom: 0;
   border: 1px solid #000000;
 }
 
 @media (max-width: 991px){
-
   button{
     font-size: 16px!important;
   }
@@ -43,15 +37,11 @@ footer{
   footer{
     width: 100%;
   }
-
   nav{
     width:100%
   }
-
   .hero{
     margin-bottom: 1rem!important;
-    /* width: 90% !important;
-    margin: 1rem !important; */
   }
   .hero .c1 {
     width: 100%!important;
@@ -70,46 +60,26 @@ footer{
   .hero-button {
     margin-top: -2rem!important;
   }
-
-
-  .nav-link:focus{
-    font-size: 18px;
-    font-weight: bold;
-    color:#495E57;
-    text-decoration: underline;
-  }
- 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+    monospace;
   }
-  /* specials */
-
-  .specials{
-    /* width: 90% !important;
-    margin: 1rem !important; */
-  }
+  
+  /* specials */ 
   .specials .grid-container {
     width: auto!important;
     grid-template-columns: auto!important;
-
   }
-
   .specials img{
     height: auto!important;
   }
   .specials section{   
     display: block!important;
     margin: 10px!important;
-  }
-  
+  }  
   .testify{
     max-width: 100%!important;
-    /* margin: 1rem!important;
-    margin-top: 1rem;
-    padding: 0; */
   }
-
   .testify .card {
     width: 100%!important;
   }
@@ -117,12 +87,7 @@ footer{
   /* About */
   .about{
     width: 100%!important;
-    /* margin: 1rem!important; */
   }
-  /* .about p{
-    width: 14rem!important;
-  } */
-
   .about-img1{
     display: flex!important;
     justify-content: center!important;
@@ -135,7 +100,6 @@ footer{
   .about img{
     width: 150px!important;   
   }
-
   footer{
     width: 100%!important;
   }
@@ -143,7 +107,6 @@ footer{
 
 @media (max-width: 350px){
  .about img, .hero-s2 {display: none;}
-
 }
 
 /* Hero */
@@ -151,7 +114,6 @@ footer{
   display: flex;
   background-color: #495E57;
   border:1px solid black;
-  /* width: 100%; */
   height: 350px;
   margin-bottom: 5rem;
  
@@ -166,14 +128,12 @@ font-family: 'Markazi Text';
 color: #F4CE14;
 margin-bottom: 0;
 }
-
 .about h2,
 .hero h2{
   font-family: 'Markazi Text';
   color: #FFFFFF;
 }
 .hero-s1{
-
   width: 30%;
   height: 21rem;
   margin-left: 1rem;
@@ -198,7 +158,6 @@ margin-bottom: 0;
   font-family: 'karla';
   color: #FFFFFF;
 }
-
 .specials button, 
 .specials button:hover,
 .hero button:hover,
@@ -212,36 +171,24 @@ border:#495E57 1px solid;
 .specials {
   width: auto;
   margin: auto;
-
 }
 .specials h2{
   font-family: 'Markazi Text';
   color: #000000;
 }
-
-.specials .card {
-  /* width: 29rem!important; */
-
-}
-
 .specials .grid-container {
   width: 75%;
   margin: auto;
   display: grid;
-
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
   grid-gap: 1em;
 }
-
 .specials .grid-item{
   width: 100%;
 }
 .specials img{
   height: 295px;
 }
-
 .specials section{
   width: 75%;
   margin: auto;
@@ -249,6 +196,7 @@ border:#495E57 1px solid;
   justify-content: space-between
 }
 
+/* testify */
 .testify{
   max-width: 75%;
   margin: auto;
@@ -259,47 +207,36 @@ border:#495E57 1px solid;
   width: 21.5rem;
   padding: 0;
 }
-
 .testify .row{
   gap:1rem;
   margin: 0;
-  /* justify-content: center; */
 }
 
 /* About */
-
 .about{
-  /* display: flex!important; */
   width: 75%;
   margin: auto;
   margin-top: 1rem;
   background-color: #495E57;
 }
-
-
-
 .about-img1{
-  /* background-image: url("../public/images/fishdish.png"); */
   margin-top: 30px;
 }
  .about-img2{
-
   margin-left: -30px;
 } 
-
 .about img{
   width: 200px;
   height: 255px;
   border: 1px black solid; 
 }
 
+/* footer */
 footer{
   width: 75%;
   background-color: #edefee!important;
 }
-
 footer  img{
   width: 75px;
-  height: auto;
-  
+  height: auto;  
 }
