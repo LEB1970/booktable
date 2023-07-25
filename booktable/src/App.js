@@ -2,7 +2,8 @@
 import './App.css';
 import Nav from './Nav';
 import Hero from './Hero';
-import Main from './Main';
+// import Main from './Main';
+import  * as main from './Main'
 import Footer from './Footer';
 import Specials from './Specials';
 import Testimonials from './Testimonial';
@@ -17,9 +18,7 @@ function App() {
       <Testimonials/>
       <About/>
     <Footer/> */}
-    <Main/>
-    
-   
+    <main.Main/> 
     </>
   );
 }

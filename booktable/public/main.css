@@ -12028,6 +12028,15 @@ textarea.form-control-lg {
   font-size: 25px !important;
 }
 
+.nav-link {
+  color: #495E57 !important;
+}
+
+.nav-link:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .specials .card-text:last-child.card-text:focus,
 .specials .card-text:last-child:hover {
   position: absolute;
@@ -12078,13 +12087,6 @@ textarea.form-control-lg {
   padding: 1rem;
 }
 
-.nav-link:focus {
-  font-size: 18px;
-  font-weight: bold;
-  color: #495E57;
-  text-decoration: underline;
-}
-
 @media (max-width: 991px) {
   nav .container-fluid, nav .container-sm, nav .container-md, nav .container-lg, nav .container-xl, nav .container-xxl {
     flex-direction: row-reverse;
@@ -12102,7 +12104,21 @@ textarea.form-control-lg {
     margin-top: 25px;
     width: auto;
   }
-  .nav-link {
-    color: #495E57 !important;
-  }
+}
+.btn {
+  background-color: #495E57;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  width: 183px;
+}
+
+.btn:hover {
+  background-color: #495E57;
+  border-color: #000000;
+}
+
+.booking-form {
+  max-width: 768px;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

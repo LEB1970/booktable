@@ -240,3 +240,6 @@ footer  img{
   width: 75px;
   height: auto;  
 }
+.error{
+  color:red;
+}

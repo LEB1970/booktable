@@ -8,10 +8,13 @@ const HomePage = ()=>{
         <header className="">  
             
             <Hero/>
+            <section>
             <Specials/>
             <Testimonials/>
             <About/>
-            <Footer/>             
+            <Footer/> 
+            </section>
+                      
         </header>
     )
 };
