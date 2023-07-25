@@ -25,5 +25,3 @@ function fetchAPI(date) {
 function submitAPI(formData) {
     return true;
 };
-
-export {fetchAPI, submitAPI};
