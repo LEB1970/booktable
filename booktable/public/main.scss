@@ -63,6 +63,27 @@
     border-radius: 1rem;
     padding: 1rem;
 }
+.confirm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.confirm img{
+    width: 100%;
+    margin: auto;
+}
+.confirm .header-text{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.confirm-list{
+    list-style: none;
+    padding-left: 0px;
+}
+.confirm-list label{
+    font-weight: bold;
+}
 
 @media (max-width: 991px){
     nav .container-fluid{
@@ -81,8 +102,21 @@
         width: auto;
       }
     }
-   
+    .confirm{
+        width: 100%;
+        padding: 10px;
+    }
 }
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    //enter code here
+    .confirm{
+        width: 75vw;
+    }
+    .confirm img {
+        height: 200px;
+    }
+}
+
 .btn{
     background-color: #495E57;
     height: 60px;
@@ -98,4 +132,5 @@
 .booking-form{
     max-width: 768px;
     margin: auto;
+    padding: 10px;
 }

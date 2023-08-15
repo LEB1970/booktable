@@ -5,11 +5,12 @@ import BookingPage from './BookingPage';
 import About from './About';
 import OrderOnline from './OrderOnline';
 import Login from './Login';
+import ConfirmBooking from './ConfirmBooking';
 
 import { Routes, Route, useNavigate} from 'react-router-dom';
-import Specials from './Specials';
+// import Specials from './Specials';
 import {fetchAPI, submitAPI}  from './ApiData'
-import {useReducer, useEffect} from "react"
+import {useReducer} from "react"
 
 let initializeTimesState;
 let navigate;
@@ -27,7 +28,7 @@ const updateTimesReducer = (state, action)=>{
 
 const availableDates = (avialableDays)=>{
     const date = avialableDays ? avialableDays : new Date(); 
-    debugger;
+ 
     let  availabletime =fetchAPI(date);
     let availabletimeArr =[...availabletime];
     availabletimeArr.unshift("-- Select a time --"); 
@@ -44,9 +45,10 @@ const initializeTimes = ()=>{
 }
 
 const submitForm =(formData)=>{ 
+    debugger
     const isTrue = submitAPI(formData);
     if(isTrue){
-      navigate("/ConfirmedBooking", { state: { data: formData } });
+      navigate ("/confirm", { state: { data: formData } });
     }
 };
 
@@ -65,6 +67,7 @@ const [availableTimeState,availableTimeDispatch] = useReducer(updateTimesReducer
                 <Route path="/about" element={<About/>}/>
                 <Route path="/order-online" element={<OrderOnline/>}/>
                 <Route path="/login" element={<Login/>}/>
+                <Route path="/confirm" element={<ConfirmBooking/>}/>
                 {/* <Route path="/specials" element={<Specials/>}/> */}
             </Routes>
         </>
