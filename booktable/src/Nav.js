@@ -1,6 +1,12 @@
 import {Link,useNavigate} from 'react-router-dom';
+
 const Nav = ()=>{
     const navigate = useNavigate();
+
+    function handleClick(e) {
+        debugger
+        e.currentTarget.classList.remove("show");
+    }
     return(
         <nav className="nav navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">             
@@ -9,9 +15,10 @@ const Nav = ()=>{
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div>
-                <ul  id="navbarNav" className="collapse navbar-collapse">
-                    <li className="nav-item">
-                    <Link to="/" className="nav-link" role="button">Home</Link>
+                <ul  id="navbarNav" className="collapse navbar-collapse"  onClick={handleClick}>
+                    <li className="nav-item" >
+                    {/* <button to="/" className="nav-link" role="button" onClick={handleClick} >Home</button> */}
+                    <Link to="/" className="nav-link" role="button"  >Home</Link>
                     </li>     
                     <li className="nav-item">
                     <Link to="about" className="nav-link" role="button">About</Link>

@@ -8,6 +8,7 @@ function seededRandom(seed) {
 }
 
 function fetchAPI(date) {
+    debugger
     let result = [];
     let random = seededRandom(date.getDate());
 
