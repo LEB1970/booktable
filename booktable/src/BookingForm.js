@@ -11,45 +11,37 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
     const [resOccasion,setOccasion]=useState("");   
 
     const handleSubmit = (e)=>{
-       debugger;
     e.preventDefault();
-        console.log('formik',formik)
-        console.log('Form Submitted');
-        console.log('resDate',resDate);
-        console.log('resTime',resTime);
-        console.log('resGuest',resGuest);
-        console.log('resOccasion',resOccasion);   
+        // console.log('formik',formik)
+        // console.log('Form Submitted');
+        // console.log('resDate',resDate);
+        // console.log('resTime',resTime);
+        // console.log('resGuest',resGuest);
+        // console.log('resOccasion',resOccasion);   
         formik.handleSubmit(e);
     };
 
-    const handleDate = (e)=>{
-        console.log('handleDate',e);
-        console.log(e.target.value)
+    const handleDate = (e)=>{        
         setDate(e.target.value);  
         formik.handleChange(e);              
         const date = new Date(e.target.value);       
         availableTimeDispatch({type:'date', payload:date});
     };
-    const handleDateBlur = (e)=>{
-        console.log('handleDateBlur',e.target.value); 
+    const handleDateBlur = (e)=>{        
         formik.handleBlur(e);
     };
-    const handleTime = (e)=>{
-        console.log('handleTime',e); 
+    const handleTime = (e)=>{ 
         setTime(e.target.value)
         formik.handleChange(e);
     };
-    const handleTimeBlur = (e)=>{
-        console.log('handleTimeBlur e.target.value',e.target.value); 
+    const handleTimeBlur = (e)=>{ 
         formik.handleBlur(e);
     };
     const handleGuest = (e)=>{
-        console.log('handleGuest',e); 
         setGuest(e.target.value);
         formik.handleChange(e);
     };
     const handleGuestBlur = (e)=>{
-        console.log('handleGuestBlur',e); 
         formik.handleBlur(e);
     };
      const handleOccasion = (e)=>{       
@@ -66,38 +58,32 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
             occasion:''
         },
         onSubmit: (values) =>{
-            console.log('onSubmit Inside Formik:',values);
             const formData = {resDate:resDate, resTime:resTime, resGuest:resGuest,resOccasion};
             submitForm(formData);
-        },      
-
+        },  
          validate: (values)=>{
             const errors={}
             if(!values.resdate){
-                console.log('!values.resdate:', values.resdate)
                 errors.resdate = 'Select a date by clicking the calender icon.'
             }
-            if(values.guests < 2 ){ 
-                console.log('values.guests.value ! >1:',values.guests)              
+            if(values.guests < 2 ){              
                 errors.guests = 'It is required to have two or more guest to reserve a table.'
             }           
-            if(!values.restime){                
-                console.log('!values.restime false:', values.restime)
+            if(!values.restime){  
                 errors.restime = 'Please select an available time from the drop down.'
             }   
             if(values.restime && (/^\d{2}\:\d{2}$/).test(values.restime) === false){ 
                 errors.restime = 'Please select an available time from the drop down.'
-            }  
-
-            console.log('errors',errors)
+            } 
             return errors;
         }
     });
 
     return ( 
-        <>        
-        <form  className="mb-3 booking-form" onSubmit={handleSubmit} >  
-        <h1>Book Now</h1>
+        <div className="booking">  
+         <h1 className="display-5 fw-bold p-2">Book Now</h1>      
+        <form  className="booking-form mb-3" onSubmit={handleSubmit} >  
+       
             <img src='./images/Resveration2.png' alt="book now image"  className='' width="100%" height="" />  
            <div className="mb-3"><h2>To book a reservation, please fill out this form.</h2></div> 
             <div className="form-group mb-2">
@@ -127,7 +113,7 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
             </div>
             <div  title='warning' className="form-group mb-2">
                 <label htmlFor="guests" className="fw-bold">Number of guests</label>               
-                <input id="guests" name="guests" aria-label="Select number of guest" type="number" className="form-control" placeholder="0"  min="1" max="10" value={resGuest} onChange={handleGuest} onBlur={handleGuestBlur}/>
+                <input type="number" id="guests" name="guests" aria-label="Select number of guest"  className="form-control" placeholder="0"  min="1" max="10" value={resGuest} onChange={handleGuest} onBlur={handleGuestBlur}/>
                 <div className="error d-flex align-items-center  mb-2">
                     <div style={{display: formik.touched.guests  && formik.errors.guests  ? 'inline-flex' : 'none' }} className='me-2 '>
                         <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-exclamation-triangle " viewBox="0 0 16 16">
@@ -150,7 +136,7 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
                 </div>
             </div>
         </form>        
-        </>
+        </div>
     );
 };  
 export default BookingForm;

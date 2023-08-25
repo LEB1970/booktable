@@ -14,10 +14,8 @@ import {useReducer} from "react"
 let initializeTimesState;
 let navigate;
 
-const updateTimesReducer = (state, action)=>{  
-    debugger
+const updateTimesReducer = (state, action)=>{ 
     //Update State from dispatch call.
-   console.log(state,action)
     const date = action.type == 'date' ? action.payload : state; 
     const times =  availableDates(date);
   
@@ -27,8 +25,7 @@ const updateTimesReducer = (state, action)=>{
 }
 
 const availableDates = (avialableDays)=>{
-    const date = avialableDays ? avialableDays : new Date(); 
- 
+    const date = avialableDays ? avialableDays : new Date();  
     let  availabletime =fetchAPI(date);
     let availabletimeArr =[...availabletime];
     availabletimeArr.unshift("-- Select a time --"); 
@@ -44,8 +41,7 @@ const initializeTimes = ()=>{
     return initializeTimesState;
 }
 
-const submitForm =(formData)=>{ 
-  
+const submitForm =(formData)=>{   
     const isTrue = submitAPI(formData);
     if(isTrue){
       navigate ("/confirm", { state: { data: formData } });
@@ -56,8 +52,7 @@ const Main = ()=>{
 navigate = useNavigate();
 const [availableTimeState,availableTimeDispatch] = useReducer(updateTimesReducer,initializeTimes());
     return(
-        <>
-            <section></section>
+        <>          
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/menu" element={<Menu/>}/>
