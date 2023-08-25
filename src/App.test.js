@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import BookingForm from './BookingForm'
-import  * as main from './Main'
+import BookingForm from './Component/BookingForm'
+import  * as main from './Component/Main'
 
 test('Renders the BookingForm heading', () => {
     const initializeTimesState = [
