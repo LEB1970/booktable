@@ -12,10 +12,10 @@ const About = ()=>{
                 </div>
             </div>
             <div className="about-img1">
-                <img src="/images/fishdish.png"/>             
+                <img src="/images/fishdish.png" alt="fish dish"/>             
             </div>
             <div className="about-img2">
-            <img src="/images/chef2.png"/>
+            <img src="/images/chef2.png" alt="chef"/>
             </div>
         </div>
     </div>

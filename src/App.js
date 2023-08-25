@@ -1,7 +1,7 @@
 
 import './App.css';
-import Nav from './Nav';
-import  * as main from './Main'
+import Nav from './Component/Nav';
+import  * as main from './Component/Main'
 
 function App() {
   return (

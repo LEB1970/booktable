@@ -10,7 +10,7 @@ const Specials = ()=>{
             <div  className=" grid-container">
             <div className="grid-item">
                 <div className="card">
-                <img className="card-img-top" src="/images/GreekSalad.png" alt="Card image cap"/>
+                <img className="card-img-top" src="/images/GreekSalad.png" alt="Greek Salad"/>
                 <div className="card-body d-flex justify-content-between">
                     <h5 className="card-title">Greek Salad</h5>                    
                     <h5 className="card-title-price">$12.99</h5> 
@@ -20,14 +20,14 @@ const Specials = ()=>{
                 </div>
                 <div className="card-body  d-flex justify-content-between ">
                 <p className="">Order a delivery</p>
-                <img className="card-img-delivery" src="/images/delivery.png" alt="Card image cap"/>
+                <img className="card-img-delivery" src="/images/delivery.png" alt="delivery"/>
                 </div>
                 </div>
             </div>
             
             <div className="grid-item">
                 <div className="card" >
-                <img className="card-img-top" src="/images/Bruchetta.png" alt="Card image cap"/>
+                <img className="card-img-top" src="/images/Bruchetta.png" alt="Bruchetta"/>
                 <div className="card-body d-flex justify-content-between">
                     <h5 className="card-title">Bruchetta</h5> 
                     <h5 className="card-title-price">$5.99</h5>                    
@@ -37,14 +37,14 @@ const Specials = ()=>{
                 </div>
                 <div className="card-body  d-flex justify-content-between ">
                 <p className="">Order a delivery</p>
-                <img className="card-img-delivery" src="/images/delivery.png" alt="Card image cap"/>
+                <img className="card-img-delivery" src="/images/delivery.png" alt="delivery"/>
                 </div>
                 </div>            
             </div>
 
             <div className="grid-item">
                 <div className="card" >
-                <img className="card-img-top" src="/images/lemondessert.jpg" alt="Card image cap"/>
+                <img className="card-img-top" src="/images/lemondessert.jpg" alt="lemon dessert"/>
                 <div className="card-body d-flex justify-content-between">
                     <h5 className="card-title">Lemon Dessert</h5>     
                     <h5 className="card-title-price">$5.00</h5>                
@@ -54,7 +54,7 @@ const Specials = ()=>{
                 </div>
                 <div className="card-body  d-flex justify-content-between ">
                 <p className="">Order a delivery</p>
-                <img className="card-img-delivery" src="/images/delivery.png" alt="Card image cap"/>
+                <img className="card-img-delivery" src="/images/delivery.png" alt="delivery"/>
                 </div>
                 </div>
             </div>

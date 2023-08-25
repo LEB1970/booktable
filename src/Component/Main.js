@@ -16,7 +16,7 @@ let navigate;
 
 const updateTimesReducer = (state, action)=>{ 
     //Update State from dispatch call.
-    const date = action.type == 'date' ? action.payload : state; 
+    const date = action.type === 'date' ? action.payload : state; 
     const times =  availableDates(date);
   
     return times.map((option, index)=>{

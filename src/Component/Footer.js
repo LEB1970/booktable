@@ -7,7 +7,7 @@ const Footer = ()=>{
                 <div className="container text-center text-md-start mt-5">                
                     <div className="row mt-3">
                         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">          
-                            <img src='/images/footerImage2.png' alt='footer image'/>                 
+                            <img src='/images/footerImage2.png' alt='footer'/>                 
                         </div>
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">                        
