@@ -64,10 +64,8 @@ const Footer = ()=>{
                     </div>                
                 </div>
             </section>
-            <div className="text-center p-4" style={{background:'#FBDABB' }}> 
-            {/* "rgba(0, 0, 0, 0.05)" */}
-               <p className='d-flex justify-content-center'> © 2023 Copyright: <Link to="/" className="text-reset fw-bold ps-1" role="button">Little Lemon</Link></p>
-                {/* <a className="text-reset fw-bold" href="#">Little Lemon</a> */}
+            <div className="text-center p-4" style={{background:'#FBDABB' }}>            
+               <p className='d-flex justify-content-center'> © 2023 Copyright: <Link to="/" className="text-reset fw-bold ps-1" role="button">Little Lemon</Link></p>              
             </div>
         </footer>
        

@@ -5,16 +5,14 @@ import About from './About';
 import Hero from './Hero';
 const HomePage = ()=>{
     return( 
-        <header className="">  
-            
+        <header className="">             
             <Hero/>
             <section>
             <Specials/>
             <Testimonials/>
             <About/>
             <Footer/> 
-            </section>
-                      
+            </section>                      
         </header>
     )
 };
