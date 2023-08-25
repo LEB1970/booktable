@@ -1,26 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom'
-import BookingPage from './BookingPage'
 import BookingForm from './BookingForm'
 import  * as main from './Main'
-import App from './App'
-
-
-
-// test('renders learn react link', () => {
-//   const initializeTimesState = [
-//     {id:0, value: '-- Select a time --'},
-//     {id:1, value:'17:00'},
-//     {id:2, value:'18:00'},
-//     {id:3, value:'19:00'},
-//     {id:4, value:'20:00'},
-//     {id:5, value:'21:00'},
-//     {id:6, value:'22:00'}
-//   ];    
-//   render(<App/>);
-//   const linkElement = screen.getByText("Booking Page");
-//   expect(linkElement).toBeInTheDocument();
-// });
 
 test('Renders the BookingForm heading', () => {
     const initializeTimesState = [
@@ -63,8 +44,7 @@ test('updateTimesReducer',()=>{
   {id:4, value:'20:00'},
   {id:5, value:'21:00'},
   {id:6, value:'22:00'}
-  ]; 
-  
+  ];   
   const action ={
     type:'date',
     payload: new Date('Fri May 05 2023 19:00:00 GMT-0500 (Central Daylight Time)')

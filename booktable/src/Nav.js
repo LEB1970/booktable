@@ -4,7 +4,6 @@ const Nav = ()=>{
     const navigate = useNavigate();
 
     function handleClick(e) {
-        debugger
         e.currentTarget.classList.remove("show");
     }
     return(
