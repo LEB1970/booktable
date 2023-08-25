@@ -16,8 +16,7 @@ const Nav = ()=>{
                 </button>
                 <div>
                 <ul  id="navbarNav" className="collapse navbar-collapse"  onClick={handleClick}>
-                    <li className="nav-item" >
-                    {/* <button to="/" className="nav-link" role="button" onClick={handleClick} >Home</button> */}
+                    <li className="nav-item" >                  
                     <Link to="/" className="nav-link" role="button"  >Home</Link>
                     </li>     
                     <li className="nav-item">

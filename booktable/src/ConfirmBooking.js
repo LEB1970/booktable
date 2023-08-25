@@ -11,8 +11,6 @@ const ConfirmBooking = ()=>{
         <img src='./images/ConfirmedBooking.png' alt="Reservation image"  className='' width="" height="" />
        
         <div className='header-text'>
-            {/* <div> Your booking has been confirmed.</div>    */}
-            {/* <div> Your reservation information:</div> */}
         </div> 
         <div className='' >
             <ul className='confirm-list'>
@@ -21,10 +19,8 @@ const ConfirmBooking = ()=>{
                 <li><label>Occasion:</label> {location.state.data.resOccasion}</li>
                 <li><label>Number of Guests:</label> {location.state.data.resGuest}</li>
          
-            </ul>
-           
+            </ul>           
         </div>
-        {/* <button onClick={() => navigate(-1)}>Back</button>  */}
     </section>
     );
 };

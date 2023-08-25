@@ -4,7 +4,6 @@ const Hero = ()=>{
     const handleNavigate = ()=>{
         navigate("/booking-Page");
     }
-
     return(
     <div  className="hero">
         <div className="d-flex c1">

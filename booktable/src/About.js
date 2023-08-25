@@ -3,7 +3,6 @@ const About = ()=>{
    
     <div className="about">
         <div className="d-flex m-2">
-            {/* <div><h1>About</h1> </div>            */}
             <div>
                 <div  className="">
                     <h1 className="display-5 fw-bold">Little Lemon</h1>
@@ -12,17 +11,14 @@ const About = ()=>{
                     
                 </div>
             </div>
-
             <div className="about-img1">
                 <img src="/images/fishdish.png"/>             
             </div>
-
             <div className="about-img2">
             <img src="/images/chef2.png"/>
             </div>
         </div>
     </div>
- 
     
     );
 };
