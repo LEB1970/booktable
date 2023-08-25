@@ -1,11 +1,10 @@
-import {useLocation,useNavigate} from "react-router-dom"
+import {useLocation} from "react-router-dom"
 
 const ConfirmBooking = ()=>{
-    let navigate = useNavigate();
     const location = useLocation()
     return(
         <section className='confirm' tabIndex={0} >
-        <img src='./images/ConfirmedBooking.png' alt="Reservation image"  className='' width="" height="" />       
+        <img src='./images/ConfirmedBooking.png' alt="Reservation"  className='' width="" height="" />       
         <div className='header-text'>
         </div> 
         <div className='' >

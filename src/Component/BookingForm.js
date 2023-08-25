@@ -48,8 +48,7 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
        setOccasion(e.target.value)
        formik.handleChange(e);
     };
-
-    const isTrue = true;
+  
     const formik = useFormik({
         initialValues:{
             resdate:'',
@@ -72,7 +71,8 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
             if(!values.restime){  
                 errors.restime = 'Please select an available time from the drop down.'
             }   
-            if(values.restime && (/^\d{2}\:\d{2}$/).test(values.restime) === false){ 
+            // if(values.restime && (/^\d{2}\:\d{2}$/).test(values.restime) === false){ 
+            if(values.restime && (/^\d{2}:\d{2}$/).test(values.restime) === false){ 
                 errors.restime = 'Please select an available time from the drop down.'
             } 
             return errors;
@@ -84,11 +84,11 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
          <h1 className="display-5 fw-bold p-2">Book Now</h1>      
         <form  className="booking-form mb-3" onSubmit={handleSubmit} >  
        
-            <img src='./images/Resveration2.png' alt="book now image"  className='' width="100%" height="" />  
+            <img src='./images/Resveration2.png' alt="book now"  className='' width="100%" height="" />  
            <div className="mb-3"><h2>To book a reservation, please fill out this form.</h2></div> 
             <div className="form-group mb-2">
                 <label htmlFor="res-date" className="fw-bold">Choose date</label>               
-                <input  id="res-date" aria-label="Choose date" name="resdate" type="date" role="date" className="form-control" value={resDate} onChange={handleDate} onBlur={handleDateBlur}   />
+                <input  id="res-date" name="resdate" type="date" className="form-control" value={resDate} onChange={handleDate} onBlur={handleDateBlur}   />
                 <div  title='warning' className="error d-flex align-items-center mb-2">
                     <div style={{display: formik.touched.resdate  && formik.errors.resdate  ? 'inline-flex' : 'none' }} className='me-2 '>
                         <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-exclamation-triangle " viewBox="0 0 16 16">
@@ -128,7 +128,7 @@ const BookingForm = ({availableTime,availableTimeDispatch,submitForm})=>{
                 <Occasion name="occasion" aria-label="Select occasion" value = {resOccasion}  onChange={handleOccasion} />
             </div>   
             <div className="d-flex justify-content-between mt-3" >
-                <button type="submit" role="button"  className="btn btn-primary">Make Your reservation</button>           
+                <button type="submit" className="btn btn-primary">Make Your reservation</button>           
                 <div>
                     <Link to="/">
                         <button className="btn btn-primary">Cancel</button>
